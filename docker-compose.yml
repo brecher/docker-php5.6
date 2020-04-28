@@ -8,7 +8,7 @@ services:
     container_name: docker-php5.6
     image: docker-php5.6
     volumes:
-        - /Users/desenvolvimento/Sites:/var/www/html
+        - ./html:/var/www/html:delegated
     ports:
-      - 8000:80
+      - 8080:80
     network_mode: bridge
